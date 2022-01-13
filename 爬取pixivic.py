@@ -39,7 +39,7 @@ for j in range(1,20):
             imgsrc_split=re.findall("https://i.pximg.net(.*)",imgsrc)
             img_download_url=f"https://o.acgpic.net{imgsrc_split[0]}"
             #打印图片正确链接,因防盗链原因正常情况无法打开
-            print(img_download_url)
+            #print(img_download_url)
             #请求图片链接
             resp_img=requests.get(url=img_download_url,headers=headers)
             #下载图片
