@@ -4,10 +4,13 @@
 # @File : 爬取pixivic.py
 # @Software : PyCharm
 import requests
-import time
+import datetime
 import re
 sum = 0
-date = time.strftime("%y-%m-%d")
+date_three = datetime.datetime.today() - datetime.timedelta(days=3)
+date = date_three.strftime("%Y-%m-%d")
+print(date)
+
 img_url=r"https://acgpic.net/" #正确的图片访问链接
 file_download="D:\\images\\" #图片下载位置
 headers = {
@@ -18,7 +21,7 @@ headers = {
 for j in range(1,20):
     print(f"开始下载第{j}页")
     params = {
-        "date": "2022-01-11",
+        "date": date,
         "page": j,
         "mode": "day",
         "pageSize": "30"
