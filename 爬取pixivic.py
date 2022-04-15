@@ -7,7 +7,8 @@ import requests
 import datetime
 import re
 sum = 0
-date_three = datetime.datetime.today() - datetime.timedelta(days=3)
+#在pixivic中它的xml数据永远是当前日期的前三天 所以在此处特意设置为前三天 你可以尝试去更改它的日期 
+date_three = datetime.datetime.today() - datetime.timedelta(days=3) 
 date = date_three.strftime("%Y-%m-%d")
 print(date)
 
