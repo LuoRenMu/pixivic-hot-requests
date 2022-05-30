@@ -27,7 +27,7 @@ for j in range(1,20):
         "mode": "day",
         "pageSize": "30"
     }
-    #请求js数据渲染链接
+    #请求xml
     resp = requests.get(url="https://pix.ipv4.host/ranks", headers=headers, params=params)
     resp.encoding = 'utf-8'
     # 爬取一页内容 共25
