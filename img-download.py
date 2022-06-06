@@ -1,7 +1,7 @@
 # -*- codeing = utf-8 -*-
 # @Time : 2021/9/5 10:36
 # @Author : YFen4nt0ren
-# @File : 爬取pixivic.py
+# @File : pixivic.py
 # @Software : PyCharm
 import requests
 import datetime
