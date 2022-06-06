@@ -17,7 +17,7 @@ headers = {
     "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.63 Safari/537.36",
     "referer": "https://pixivic.com/"
 }
-#循环爬取20页
+# 0-20 *30
 for j in range(1,20):
     print(f"开始下载第{j}页")
     params = {
@@ -26,7 +26,7 @@ for j in range(1,20):
         "mode": "day",
         "pageSize": "30"
     }
-    #请求js数据渲染链接
+    #network xml
     resp = requests.get(url="https://pix.ipv4.host/ranks", headers=headers, params=params)
     resp.encoding = 'utf-8'
     # 爬取一页内容 共25
