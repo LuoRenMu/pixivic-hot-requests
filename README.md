@@ -1,5 +1,5 @@
 # pixivic-hot-requests
-python requests study  sample
+python requests study  project
 
 pivixic images download 
 
