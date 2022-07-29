@@ -102,7 +102,7 @@ for j in range(1,999):
                         sum=sum+1
         except Exception:
             print(f"图片下载发生错误:{imgid}")
-            print("数据代码:",resp.status_code,"\n图片代码:",resp_img.status_code)
+            print("数据代码:",resp.status_code,")
             if downloadException == 3 :
                 print("无法处理异常(大概率ip被暂时封禁)")
                 time.sleep(5)
